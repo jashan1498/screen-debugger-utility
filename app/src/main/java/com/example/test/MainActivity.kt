@@ -17,6 +17,7 @@ class MainActivity : BaseActivity() {
         setCustomView(R.layout.activity_main)
 
         showDummy()
+        log("exception", " Error",LOGTYPE.ERROR)
 
     }
 

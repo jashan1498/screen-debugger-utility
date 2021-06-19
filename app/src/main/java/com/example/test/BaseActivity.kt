@@ -32,17 +32,7 @@ open class BaseActivity : AppCompatActivity() {
             tv_logs.movementMethod = ScrollingMovementMethod()
         }
 
-        val logText = tv_logs.text.toString().plus("\n $tag : $value")
-        val startIndex = logText.lastIndexOf(value)
-        val spannableString = SpannableString(logText)
-        if (type == LOGTYPE.ERROR){
-            val startIndex = logText.lastIndexOf(value)
-            val spannableString = SpannableString(logText)
-            spannableString.setSpan(ForegroundColorSpan(Color.RED), startIndex, startIndex + value.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-
-        }
-
-        tv_logs.setText(spannableString)
+        tv_logs.text = tv_logs.text.toString().plus("\n $tag : $value")
 
     }
 }
