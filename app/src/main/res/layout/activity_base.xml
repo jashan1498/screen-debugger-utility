@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaseActivity">
+
+    <TextView
+        android:id="@+id/tv_logs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#C8000000"
+        android:maxHeight="400dp"
+        android:minWidth="200dp"
+        android:minHeight="200dp"
+        android:paddingHorizontal="20dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+</FrameLayout>
